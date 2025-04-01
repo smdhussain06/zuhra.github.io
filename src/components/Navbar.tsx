@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Leaf } from 'lucide-react';
+import { Menu, X, Leaf, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Leaf className="h-6 w-6 text-unani-leaf" />
-            <span className="font-serif text-xl md:text-2xl font-semibold">Unani Nature Haven</span>
+            <span className="font-serif text-xl md:text-2xl font-semibold">Hayath Clinic</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -28,7 +28,10 @@ const Navbar = () => {
             <a href="#contact" className="text-foreground/80 hover:text-unani-leaf transition-colors">Contact</a>
           </nav>
 
-          <Button className="hidden md:flex bg-unani-sage hover:bg-unani-leaf text-white">Book Appointment</Button>
+          <Button className="hidden md:flex bg-unani-sage hover:bg-unani-leaf text-white gap-2">
+            <Phone className="h-4 w-4" />
+            Call Now
+          </Button>
 
           {/* Mobile Menu Button */}
           <button 
@@ -54,7 +57,10 @@ const Navbar = () => {
             <a href="#testimonials" className="text-foreground/80 hover:text-unani-leaf transition-colors py-2" onClick={toggleMenu}>Testimonials</a>
             <a href="#blog" className="text-foreground/80 hover:text-unani-leaf transition-colors py-2" onClick={toggleMenu}>Blog</a>
             <a href="#contact" className="text-foreground/80 hover:text-unani-leaf transition-colors py-2" onClick={toggleMenu}>Contact</a>
-            <Button className="bg-unani-sage hover:bg-unani-leaf text-white w-full">Book Appointment</Button>
+            <Button className="bg-unani-sage hover:bg-unani-leaf text-white w-full gap-2">
+              <Phone className="h-4 w-4" />
+              Call Now
+            </Button>
           </nav>
         </div>
       )}

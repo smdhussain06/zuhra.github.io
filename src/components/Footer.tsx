@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Leaf, Mail, Phone, MapPin, Clock, Facebook, Instagram, Twitter, AlertTriangle } from 'lucide-react';
+import { Leaf, Mail, Phone, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <Leaf className="h-6 w-6 text-unani-beige" />
-              <span className="font-serif text-xl font-semibold text-white">Unani Nature Haven</span>
+              <span className="font-serif text-xl font-semibold text-white">Hayath Clinic</span>
             </div>
             <p className="text-white/80 mb-6">
               Traditional healing wisdom for modern wellness, bringing balance to mind, body, and spirit.
@@ -43,20 +43,16 @@ const Footer = () => {
             <h3 className="font-serif text-lg font-medium mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-unani-beige mt-0.5" />
+                <MapPin className="h-7 w-7 text-unani-beige mt-0.5" />
                 <span className="text-white/80">42 Anna Salai, Teynampet, Chennai - 600018, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-unani-beige" />
-                <span className="text-white/80">(555) 123-4567</span>
+                <span className="text-white/80">+91 987-654-3210</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-unani-beige" />
                 <span className="text-white/80">info@hayathclinic.com</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <AlertTriangle className="h-5 w-5 text-unani-beige" />
-                <span className="text-white/80 font-medium">Emergency: +91 987-654-3210</span>
               </li>
             </ul>
           </div>
@@ -83,7 +79,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/60">
-          <p>&copy; {new Date().getFullYear()} Unani Nature Haven. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Hayath Clinic. All rights reserved.</p>
         </div>
       </div>
     </footer>
