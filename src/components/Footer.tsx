@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Leaf, Mail, Phone, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Leaf, Mail, Phone, MapPin, Clock, Facebook, Instagram, Twitter, AlertTriangle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-unani-beige mt-0.5" />
-                <span className="text-white/80">123 Healing Path, Wellness Valley, CA 94123</span>
+                <span className="text-white/80">42 Anna Salai, Teynampet, Chennai - 600018, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-unani-beige" />
@@ -52,26 +52,23 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-unani-beige" />
-                <span className="text-white/80">info@unaninaturehaven.com</span>
+                <span className="text-white/80">info@hayathclinic.com</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <AlertTriangle className="h-5 w-5 text-unani-beige" />
+                <span className="text-white/80 font-medium">Emergency: +91 987-654-3210</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-serif text-lg font-medium mb-4">Hours</h3>
+            <h3 className="font-serif text-lg font-medium mb-4">Working Hours</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-unani-beige" />
                 <div>
-                  <p className="font-medium">Monday - Friday</p>
-                  <p className="text-white/80">9:00 AM - 5:00 PM</p>
-                </div>
-              </li>
-              <li className="flex items-center gap-3">
-                <Clock className="h-5 w-5 text-unani-beige" />
-                <div>
-                  <p className="font-medium">Saturday</p>
-                  <p className="text-white/80">9:00 AM - 3:00 PM</p>
+                  <p className="font-medium">Monday - Saturday</p>
+                  <p className="text-white/80">9:00 AM - 7:00 PM</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
