@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Unani clinic theme colors
+				unani: {
+					'sage': '#7A8C7C',
+					'sage-light': '#A6B6A8',
+					'beige': '#E8D9C5',
+					'terra': '#C8A587',
+					'brown': '#6E4C36',
+					'gold': '#C5A880',
+					'blue': '#7A95A6',
+					'leaf': '#5A7247',
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Playfair Display', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +100,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'slide-up': {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out',
+				'slide-up': 'slide-up 0.8s ease-out'
 			}
 		}
 	},
