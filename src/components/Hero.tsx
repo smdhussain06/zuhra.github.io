@@ -8,11 +8,11 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://source.unsplash.com/photo-1616046229478-9901c5536a45" 
-          alt="Ayurvedic herbs and treatments" 
+          src="/lovable-uploads/208a57c1-4cdd-436b-9f63-09d8ac5cefb2.png" 
+          alt="Serene forest landscape with stream" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-unani-brown/60"></div>
+        <div className="absolute inset-0 bg-unani-brown/40"></div>
       </div>
       
       {/* Content */}
