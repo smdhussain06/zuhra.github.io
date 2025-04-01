@@ -53,8 +53,24 @@ const AppointmentForm = () => {
   };
 
   return (
-    <section id="appointment" className="section-padding bg-unani-sage/10">
-      <div className="container-custom">
+    <section id="appointment" className="section-padding bg-unani-sage/10 relative">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 opacity-10 pointer-events-none">
+        <img 
+          src="https://source.unsplash.com/photo-1509316975850-ff9c5deb0cd9" 
+          alt="Decorative herbs" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 opacity-10 pointer-events-none">
+        <img 
+          src="https://source.unsplash.com/photo-1515012764825-4d37a89fdce0" 
+          alt="Decorative herbs" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      <div className="container-custom relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -63,7 +79,14 @@ const AppointmentForm = () => {
                 Schedule a consultation with our experienced Unani practitioners to discover personalized treatments for your health concerns.
               </p>
               
-              <div className="bg-unani-beige rounded-lg p-6 mb-6">
+              <div className="bg-unani-beige rounded-lg p-6 mb-6 relative overflow-hidden">
+                <div className="absolute -right-8 -bottom-8 w-32 h-32 opacity-20">
+                  <img 
+                    src="https://source.unsplash.com/photo-1472396961693-142e6e269027" 
+                    alt="Herbs" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
                 <h3 className="text-xl font-serif mb-3">What to Expect</h3>
                 <p className="text-foreground/80 mb-4">
                   Your first visit includes a comprehensive assessment of your health history, constitution, and current concerns. This detailed consultation allows us to create a personalized treatment plan.
